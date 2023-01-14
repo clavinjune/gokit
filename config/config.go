@@ -2,11 +2,13 @@ package config
 
 import (
 	"os"
+
+	"github.com/clavinjune/gokit/internal/argutil"
 )
 
 // Get gets value from os.Getenv with customized behavior from *Option
 func Get(key string, opts ...*Option) (string, error) {
-	opt := option(opts...)
+	opt := argutil.FirstOrDefault(&DefaultOption, opts...)
 	value := os.Getenv(key)
 
 	if value == "" && opt.DefaultValue != "" {
@@ -18,17 +20,4 @@ func Get(key string, opts ...*Option) (string, error) {
 	}
 
 	return value, nil
-}
-
-// option use the first Option if not empty
-// otherwise use DefaultOption
-func option(opts ...*Option) *Option {
-	var opt *Option
-	if len(opts) >= 1 && opts[0] != nil {
-		opt = opts[0]
-	} else {
-		opt = &DefaultOption
-	}
-
-	return opt
 }
