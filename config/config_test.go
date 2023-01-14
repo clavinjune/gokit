@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/clavinjune/gokit/internal/testutil"
+	"github.com/clavinjune/gokit/internal/stringutil"
 
 	"github.com/clavinjune/gokit/config"
 	"github.com/stretchr/testify/require"
@@ -71,7 +71,7 @@ func TestGet(t *testing.T) {
 		t.Run(tc.Name, func(t *testing.T) {
 			t.Parallel()
 			r := require.New(t)
-			key := testutil.RandomString(t, "gokit", 5)
+			key := "gokit" + stringutil.Random(5)
 
 			if tc.EnvValue != "" {
 				os.Setenv(key, tc.EnvValue)
