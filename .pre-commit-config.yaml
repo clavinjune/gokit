@@ -1,0 +1,15 @@
+repos:
+  - repo: local
+    hooks:
+      - id: lint
+        name: Lint stage
+        language: system
+        entry: make lint
+        types:
+          - go
+      - id: test
+        name: Test stage
+        language: system
+        entry: make test
+        types:
+          - go
