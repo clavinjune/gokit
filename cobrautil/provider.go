@@ -1,21 +1,18 @@
 package cobrautil
 
 import (
-	"io"
-
+	"github.com/clavinjune/gokit/argutil"
 	"github.com/clavinjune/gokit/slogutil"
 	"github.com/spf13/cobra"
 	"golang.org/x/exp/slog"
 )
 
-func DefaultPersistentPreRunE(writer io.Writer) func(cmd *cobra.Command, _ []string) error {
+func DefaultPersistentPreRunE(opt Option) func(cmd *cobra.Command, _ []string) error {
 	return func(cmd *cobra.Command, _ []string) error {
-		logger := slogutil.New(&slogutil.Option{
-			IsDebug:      MustGetBoolFlag(cmd, "debug"),
-			IsJSON:       MustGetBoolFlag(cmd, "json"),
-			SetAsDefault: true,
-			Writer:       writer,
-		})
+		slogOpt := opt.SlogOption
+		slogOpt.IsDebug = MustGetBoolFlag(cmd, "debug")
+		slogOpt.IsJSON = MustGetBoolFlag(cmd, "json")
+		logger := slogutil.New(&slogOpt)
 
 		cmd.SetOut(slogutil.NewWriter(logger, slog.LevelInfo))
 		cmd.SetErr(slogutil.NewWriter(logger, slog.LevelError))
@@ -24,11 +21,13 @@ func DefaultPersistentPreRunE(writer io.Writer) func(cmd *cobra.Command, _ []str
 	}
 }
 
-func New(name, version string, out io.Writer) *cobra.Command {
+func New(name, version string, opts ...*Option) *cobra.Command {
+	opt := argutil.FirstOrDefault(&DefaultOption, opts...)
+
 	root := &cobra.Command{
 		Use:               name,
 		Version:           version,
-		PersistentPreRunE: DefaultPersistentPreRunE(out),
+		PersistentPreRunE: DefaultPersistentPreRunE(*opt),
 	}
 
 	root.PersistentFlags().Bool("debug", false, "enable debug mode")
