@@ -5,6 +5,8 @@ import (
 	"encoding/json"
 	"testing"
 
+	"github.com/clavinjune/gokit/slogutil"
+
 	"github.com/clavinjune/gokit/cobrautil"
 	"github.com/clavinjune/gokit/testutil"
 	"github.com/spf13/cobra"
@@ -14,7 +16,12 @@ import (
 func TestNew(t *testing.T) {
 	r := require.New(t)
 	buf := new(bytes.Buffer)
-	root := cobrautil.New("testing", "test", buf)
+	opt := slogutil.DefaultOption
+	opt.Writer = buf
+
+	root := cobrautil.New("testing", "test", &cobrautil.Option{
+		SlogOption: opt,
+	})
 	root.RunE = func(cmd *cobra.Command, args []string) error {
 		cmd.Println("test json")
 		return nil
