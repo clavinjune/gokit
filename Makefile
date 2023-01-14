@@ -5,6 +5,7 @@ lint:
 	@go vet ./...
 	@go run $(GOIMPORTS) -w .
 	@gofmt -w -s .
+	@go mod tidy
 	@go run $(GOVULNCHECK) ./...
 
 

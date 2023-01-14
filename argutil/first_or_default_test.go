@@ -3,7 +3,8 @@ package argutil_test
 import (
 	"testing"
 
-	"github.com/clavinjune/gokit/internal/argutil"
+	"github.com/clavinjune/gokit/argutil"
+
 	"github.com/stretchr/testify/require"
 )
 

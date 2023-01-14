@@ -33,3 +33,11 @@ type Option struct {
 	RedactedKeys []string
 	Writer       io.Writer
 }
+
+func (o *Option) WriterOrStdout() io.Writer {
+	if o.Writer != nil {
+		return o.Writer
+	}
+
+	return os.Stdout
+}

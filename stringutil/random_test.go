@@ -3,7 +3,8 @@ package stringutil_test
 import (
 	"testing"
 
-	"github.com/clavinjune/gokit/internal/stringutil"
+	"github.com/clavinjune/gokit/stringutil"
+
 	"github.com/stretchr/testify/require"
 )
 
