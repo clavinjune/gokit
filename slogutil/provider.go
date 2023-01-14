@@ -3,12 +3,14 @@ package slogutil
 import (
 	"path/filepath"
 
-	"github.com/clavinjune/gokit/internal/argutil"
+	"github.com/clavinjune/gokit/argutil"
+
 	"golang.org/x/exp/slog"
 )
 
 func New(opts ...*Option) *slog.Logger {
 	opt := argutil.FirstOrDefault(&DefaultOption, opts...)
+
 	level := slog.LevelInfo
 	if opt.IsDebug {
 		level = slog.LevelDebug
@@ -37,9 +39,9 @@ func New(opts ...*Option) *slog.Logger {
 
 	var h slog.Handler
 	if opt.IsJSON {
-		h = handlerOpt.NewJSONHandler(opt.Writer)
+		h = handlerOpt.NewJSONHandler(opt.WriterOrStdout())
 	} else {
-		h = handlerOpt.NewTextHandler(opt.Writer)
+		h = handlerOpt.NewTextHandler(opt.WriterOrStdout())
 	}
 
 	logger := slog.New(h)

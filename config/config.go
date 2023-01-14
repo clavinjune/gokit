@@ -3,7 +3,7 @@ package config
 import (
 	"os"
 
-	"github.com/clavinjune/gokit/internal/argutil"
+	"github.com/clavinjune/gokit/argutil"
 )
 
 // Get gets value from os.Getenv with customized behavior from *Option

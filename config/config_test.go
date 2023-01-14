@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/clavinjune/gokit/internal/stringutil"
+	"github.com/clavinjune/gokit/stringutil"
 
 	"github.com/clavinjune/gokit/config"
 	"github.com/stretchr/testify/require"
