@@ -10,3 +10,12 @@ func MustGetBoolFlag(cmd *cobra.Command, name string) bool {
 
 	return v
 }
+
+func MustGetIntFlag(cmd *cobra.Command, name string) int {
+	v, err := cmd.Flags().GetInt(name)
+	if err != nil {
+		panic(err.Error())
+	}
+
+	return v
+}
