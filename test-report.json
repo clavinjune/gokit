@@ -1,207 +1,213 @@
-{"Time":"2023-01-14T22:06:33.537815+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Output":"-test.shuffle 1673708793537702000\n"}
-{"Time":"2023-01-14T22:06:33.53816+07:00","Action":"run","Package":"github.com/clavinjune/gokit/config","Test":"TestGet"}
-{"Time":"2023-01-14T22:06:33.538171+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet","Output":"=== RUN   TestGet\n"}
-{"Time":"2023-01-14T22:06:33.538177+07:00","Action":"run","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_empty_value"}
-{"Time":"2023-01-14T22:06:33.538183+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_empty_value","Output":"=== RUN   TestGet/default_option_-_empty_value\n"}
-{"Time":"2023-01-14T22:06:33.538196+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_empty_value","Output":"=== PAUSE TestGet/default_option_-_empty_value\n"}
-{"Time":"2023-01-14T22:06:33.538201+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_empty_value"}
-{"Time":"2023-01-14T22:06:33.538205+07:00","Action":"run","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_non_empty_value"}
-{"Time":"2023-01-14T22:06:33.53821+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_non_empty_value","Output":"=== RUN   TestGet/default_option_-_non_empty_value\n"}
-{"Time":"2023-01-14T22:06:33.538215+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_non_empty_value","Output":"=== PAUSE TestGet/default_option_-_non_empty_value\n"}
-{"Time":"2023-01-14T22:06:33.538219+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_non_empty_value"}
-{"Time":"2023-01-14T22:06:33.538224+07:00","Action":"run","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/is_required_-_empty_value"}
-{"Time":"2023-01-14T22:06:33.538227+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/is_required_-_empty_value","Output":"=== RUN   TestGet/is_required_-_empty_value\n"}
-{"Time":"2023-01-14T22:06:33.538244+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/is_required_-_empty_value","Output":"=== PAUSE TestGet/is_required_-_empty_value\n"}
-{"Time":"2023-01-14T22:06:33.53825+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/is_required_-_empty_value"}
-{"Time":"2023-01-14T22:06:33.538254+07:00","Action":"run","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_empty_value"}
-{"Time":"2023-01-14T22:06:33.538258+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_empty_value","Output":"=== RUN   TestGet/default_value_-_empty_value\n"}
-{"Time":"2023-01-14T22:06:33.538262+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_empty_value","Output":"=== PAUSE TestGet/default_value_-_empty_value\n"}
-{"Time":"2023-01-14T22:06:33.538267+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_empty_value"}
-{"Time":"2023-01-14T22:06:33.538271+07:00","Action":"run","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_non_empty_value"}
-{"Time":"2023-01-14T22:06:33.538275+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_non_empty_value","Output":"=== RUN   TestGet/default_value_-_non_empty_value\n"}
-{"Time":"2023-01-14T22:06:33.538279+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_non_empty_value","Output":"=== PAUSE TestGet/default_value_-_non_empty_value\n"}
-{"Time":"2023-01-14T22:06:33.538283+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_non_empty_value"}
-{"Time":"2023-01-14T22:06:33.538295+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_empty_value"}
-{"Time":"2023-01-14T22:06:33.538299+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_empty_value","Output":"=== CONT  TestGet/default_option_-_empty_value\n"}
-{"Time":"2023-01-14T22:06:33.538303+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_empty_value"}
-{"Time":"2023-01-14T22:06:33.538307+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_empty_value","Output":"=== CONT  TestGet/default_value_-_empty_value\n"}
-{"Time":"2023-01-14T22:06:33.538324+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_non_empty_value"}
-{"Time":"2023-01-14T22:06:33.538329+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_non_empty_value","Output":"=== CONT  TestGet/default_value_-_non_empty_value\n"}
-{"Time":"2023-01-14T22:06:33.538335+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_non_empty_value"}
-{"Time":"2023-01-14T22:06:33.538339+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_non_empty_value","Output":"=== CONT  TestGet/default_option_-_non_empty_value\n"}
-{"Time":"2023-01-14T22:06:33.538344+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/is_required_-_empty_value"}
-{"Time":"2023-01-14T22:06:33.538349+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/is_required_-_empty_value","Output":"=== CONT  TestGet/is_required_-_empty_value\n"}
-{"Time":"2023-01-14T22:06:33.538361+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet","Output":"--- PASS: TestGet (0.00s)\n"}
-{"Time":"2023-01-14T22:06:33.538369+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_empty_value","Output":"    --- PASS: TestGet/default_option_-_empty_value (0.00s)\n"}
-{"Time":"2023-01-14T22:06:33.538377+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_empty_value","Elapsed":0}
-{"Time":"2023-01-14T22:06:33.538384+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_empty_value","Output":"    --- PASS: TestGet/default_value_-_empty_value (0.00s)\n"}
-{"Time":"2023-01-14T22:06:33.538394+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_empty_value","Elapsed":0}
-{"Time":"2023-01-14T22:06:33.538399+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_non_empty_value","Output":"    --- PASS: TestGet/default_value_-_non_empty_value (0.00s)\n"}
-{"Time":"2023-01-14T22:06:33.538404+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_non_empty_value","Elapsed":0}
-{"Time":"2023-01-14T22:06:33.53841+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_non_empty_value","Output":"    --- PASS: TestGet/default_option_-_non_empty_value (0.00s)\n"}
-{"Time":"2023-01-14T22:06:33.538415+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_non_empty_value","Elapsed":0}
-{"Time":"2023-01-14T22:06:33.53842+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/is_required_-_empty_value","Output":"    --- PASS: TestGet/is_required_-_empty_value (0.00s)\n"}
-{"Time":"2023-01-14T22:06:33.53843+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/is_required_-_empty_value","Elapsed":0}
-{"Time":"2023-01-14T22:06:33.538451+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/config","Test":"TestGet","Elapsed":0}
-{"Time":"2023-01-14T22:06:33.538461+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Output":"PASS\n"}
-{"Time":"2023-01-14T22:06:33.538466+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Output":"coverage: 100.0% of statements\n"}
-{"Time":"2023-01-14T22:06:33.53903+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Output":"ok  \tgithub.com/clavinjune/gokit/config\t0.213s\tcoverage: 100.0% of statements\n"}
-{"Time":"2023-01-14T22:06:33.539049+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/config","Elapsed":0.213}
-{"Time":"2023-01-14T22:06:33.680548+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Output":"-test.shuffle 1673708793680445000\n"}
-{"Time":"2023-01-14T22:06:33.680767+07:00","Action":"run","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom"}
-{"Time":"2023-01-14T22:06:33.680775+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom","Output":"=== RUN   TestRandom\n"}
-{"Time":"2023-01-14T22:06:33.680794+07:00","Action":"run","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/less_than_zero"}
-{"Time":"2023-01-14T22:06:33.680799+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/less_than_zero","Output":"=== RUN   TestRandom/less_than_zero\n"}
-{"Time":"2023-01-14T22:06:33.680918+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/less_than_zero","Output":"=== PAUSE TestRandom/less_than_zero\n"}
-{"Time":"2023-01-14T22:06:33.680923+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/less_than_zero"}
-{"Time":"2023-01-14T22:06:33.680927+07:00","Action":"run","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/zero_length"}
-{"Time":"2023-01-14T22:06:33.680931+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/zero_length","Output":"=== RUN   TestRandom/zero_length\n"}
-{"Time":"2023-01-14T22:06:33.680939+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/zero_length","Output":"=== PAUSE TestRandom/zero_length\n"}
-{"Time":"2023-01-14T22:06:33.680943+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/zero_length"}
-{"Time":"2023-01-14T22:06:33.680946+07:00","Action":"run","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/positive_length"}
-{"Time":"2023-01-14T22:06:33.680949+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/positive_length","Output":"=== RUN   TestRandom/positive_length\n"}
-{"Time":"2023-01-14T22:06:33.680953+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/positive_length","Output":"=== PAUSE TestRandom/positive_length\n"}
-{"Time":"2023-01-14T22:06:33.680956+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/positive_length"}
-{"Time":"2023-01-14T22:06:33.68096+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/less_than_zero"}
-{"Time":"2023-01-14T22:06:33.68097+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/less_than_zero","Output":"=== CONT  TestRandom/less_than_zero\n"}
-{"Time":"2023-01-14T22:06:33.680973+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/positive_length"}
-{"Time":"2023-01-14T22:06:33.680976+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/positive_length","Output":"=== CONT  TestRandom/positive_length\n"}
-{"Time":"2023-01-14T22:06:33.681116+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/zero_length"}
-{"Time":"2023-01-14T22:06:33.681122+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/zero_length","Output":"=== CONT  TestRandom/zero_length\n"}
-{"Time":"2023-01-14T22:06:33.681138+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom","Output":"--- PASS: TestRandom (0.00s)\n"}
-{"Time":"2023-01-14T22:06:33.681142+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/positive_length","Output":"    --- PASS: TestRandom/positive_length (0.00s)\n"}
-{"Time":"2023-01-14T22:06:33.681149+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/positive_length","Elapsed":0}
-{"Time":"2023-01-14T22:06:33.681156+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/less_than_zero","Output":"    --- PASS: TestRandom/less_than_zero (0.00s)\n"}
-{"Time":"2023-01-14T22:06:33.681162+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/less_than_zero","Elapsed":0}
-{"Time":"2023-01-14T22:06:33.681165+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/zero_length","Output":"    --- PASS: TestRandom/zero_length (0.00s)\n"}
-{"Time":"2023-01-14T22:06:33.681168+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/zero_length","Elapsed":0}
-{"Time":"2023-01-14T22:06:33.681171+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom","Elapsed":0}
-{"Time":"2023-01-14T22:06:33.681174+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Output":"PASS\n"}
-{"Time":"2023-01-14T22:06:33.681455+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Output":"coverage: 100.0% of statements\n"}
-{"Time":"2023-01-14T22:06:33.682175+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Output":"ok  \tgithub.com/clavinjune/gokit/stringutil\t0.356s\tcoverage: 100.0% of statements\n"}
-{"Time":"2023-01-14T22:06:33.682189+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/stringutil","Elapsed":0.357}
-{"Time":"2023-01-14T22:06:33.852952+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Output":"-test.shuffle 1673708793852889000\n"}
-{"Time":"2023-01-14T22:06:33.853006+07:00","Action":"run","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault"}
-{"Time":"2023-01-14T22:06:33.853011+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault","Output":"=== RUN   TestFirstOrDefault\n"}
-{"Time":"2023-01-14T22:06:33.853028+07:00","Action":"run","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/nil"}
-{"Time":"2023-01-14T22:06:33.853033+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/nil","Output":"=== RUN   TestFirstOrDefault/nil\n"}
-{"Time":"2023-01-14T22:06:33.853068+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/nil","Output":"=== PAUSE TestFirstOrDefault/nil\n"}
-{"Time":"2023-01-14T22:06:33.853081+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/nil"}
-{"Time":"2023-01-14T22:06:33.853086+07:00","Action":"run","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/zero_length"}
-{"Time":"2023-01-14T22:06:33.85309+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/zero_length","Output":"=== RUN   TestFirstOrDefault/zero_length\n"}
-{"Time":"2023-01-14T22:06:33.853095+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/zero_length","Output":"=== PAUSE TestFirstOrDefault/zero_length\n"}
-{"Time":"2023-01-14T22:06:33.853098+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/zero_length"}
-{"Time":"2023-01-14T22:06:33.853102+07:00","Action":"run","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/1_length"}
-{"Time":"2023-01-14T22:06:33.853117+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/1_length","Output":"=== RUN   TestFirstOrDefault/1_length\n"}
-{"Time":"2023-01-14T22:06:33.853121+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/1_length","Output":"=== PAUSE TestFirstOrDefault/1_length\n"}
-{"Time":"2023-01-14T22:06:33.853124+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/1_length"}
-{"Time":"2023-01-14T22:06:33.853127+07:00","Action":"run","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/2_length"}
-{"Time":"2023-01-14T22:06:33.85313+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/2_length","Output":"=== RUN   TestFirstOrDefault/2_length\n"}
-{"Time":"2023-01-14T22:06:33.853133+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/2_length","Output":"=== PAUSE TestFirstOrDefault/2_length\n"}
-{"Time":"2023-01-14T22:06:33.853136+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/2_length"}
-{"Time":"2023-01-14T22:06:33.853138+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/nil"}
-{"Time":"2023-01-14T22:06:33.853141+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/nil","Output":"=== CONT  TestFirstOrDefault/nil\n"}
-{"Time":"2023-01-14T22:06:33.853145+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/2_length"}
-{"Time":"2023-01-14T22:06:33.853148+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/2_length","Output":"=== CONT  TestFirstOrDefault/2_length\n"}
-{"Time":"2023-01-14T22:06:33.853169+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/1_length"}
-{"Time":"2023-01-14T22:06:33.853173+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/1_length","Output":"=== CONT  TestFirstOrDefault/1_length\n"}
-{"Time":"2023-01-14T22:06:33.853189+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/zero_length"}
-{"Time":"2023-01-14T22:06:33.853199+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/zero_length","Output":"=== CONT  TestFirstOrDefault/zero_length\n"}
-{"Time":"2023-01-14T22:06:33.853244+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault","Output":"--- PASS: TestFirstOrDefault (0.00s)\n"}
-{"Time":"2023-01-14T22:06:33.85325+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/nil","Output":"    --- PASS: TestFirstOrDefault/nil (0.00s)\n"}
-{"Time":"2023-01-14T22:06:33.853254+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/nil","Elapsed":0}
-{"Time":"2023-01-14T22:06:33.853259+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/2_length","Output":"    --- PASS: TestFirstOrDefault/2_length (0.00s)\n"}
-{"Time":"2023-01-14T22:06:33.853263+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/2_length","Elapsed":0}
-{"Time":"2023-01-14T22:06:33.853265+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/1_length","Output":"    --- PASS: TestFirstOrDefault/1_length (0.00s)\n"}
-{"Time":"2023-01-14T22:06:33.853268+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/1_length","Elapsed":0}
-{"Time":"2023-01-14T22:06:33.853273+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/zero_length","Output":"    --- PASS: TestFirstOrDefault/zero_length (0.00s)\n"}
-{"Time":"2023-01-14T22:06:33.853281+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/zero_length","Elapsed":0}
-{"Time":"2023-01-14T22:06:33.853292+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault","Elapsed":0}
-{"Time":"2023-01-14T22:06:33.853295+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Output":"PASS\n"}
-{"Time":"2023-01-14T22:06:33.853543+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Output":"coverage: 100.0% of statements\n"}
-{"Time":"2023-01-14T22:06:33.854309+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Output":"ok  \tgithub.com/clavinjune/gokit/argutil\t0.527s\tcoverage: 100.0% of statements\n"}
-{"Time":"2023-01-14T22:06:33.854316+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/argutil","Elapsed":0.528}
-{"Time":"2023-01-14T22:06:34.030652+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Output":"-test.shuffle 1673708794030545000\n"}
-{"Time":"2023-01-14T22:06:34.030716+07:00","Action":"run","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter"}
-{"Time":"2023-01-14T22:06:34.030722+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter","Output":"=== RUN   TestNewWriter\n"}
-{"Time":"2023-01-14T22:06:34.030727+07:00","Action":"run","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/key_redaction"}
-{"Time":"2023-01-14T22:06:34.030731+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/key_redaction","Output":"=== RUN   TestNewWriter/key_redaction\n"}
-{"Time":"2023-01-14T22:06:34.030737+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/key_redaction","Output":"=== PAUSE TestNewWriter/key_redaction\n"}
-{"Time":"2023-01-14T22:06:34.030741+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/key_redaction"}
-{"Time":"2023-01-14T22:06:34.030744+07:00","Action":"run","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/debug"}
-{"Time":"2023-01-14T22:06:34.030748+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/debug","Output":"=== RUN   TestNewWriter/debug\n"}
-{"Time":"2023-01-14T22:06:34.030752+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/debug","Output":"=== PAUSE TestNewWriter/debug\n"}
-{"Time":"2023-01-14T22:06:34.030755+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/debug"}
-{"Time":"2023-01-14T22:06:34.030759+07:00","Action":"run","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/json"}
-{"Time":"2023-01-14T22:06:34.030763+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/json","Output":"=== RUN   TestNewWriter/json\n"}
-{"Time":"2023-01-14T22:06:34.030767+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/json","Output":"=== PAUSE TestNewWriter/json\n"}
-{"Time":"2023-01-14T22:06:34.030775+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/json"}
-{"Time":"2023-01-14T22:06:34.030778+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/key_redaction"}
-{"Time":"2023-01-14T22:06:34.030786+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/key_redaction","Output":"=== CONT  TestNewWriter/key_redaction\n"}
-{"Time":"2023-01-14T22:06:34.030791+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/json"}
-{"Time":"2023-01-14T22:06:34.030794+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/json","Output":"=== CONT  TestNewWriter/json\n"}
-{"Time":"2023-01-14T22:06:34.030975+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/debug"}
-{"Time":"2023-01-14T22:06:34.031035+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/debug","Output":"=== CONT  TestNewWriter/debug\n"}
-{"Time":"2023-01-14T22:06:34.031136+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter","Output":"--- PASS: TestNewWriter (0.00s)\n"}
-{"Time":"2023-01-14T22:06:34.031148+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/debug","Output":"    --- PASS: TestNewWriter/debug (0.00s)\n"}
-{"Time":"2023-01-14T22:06:34.031152+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/debug","Elapsed":0}
-{"Time":"2023-01-14T22:06:34.031157+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/json","Output":"    --- PASS: TestNewWriter/json (0.00s)\n"}
-{"Time":"2023-01-14T22:06:34.031165+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/json","Elapsed":0}
-{"Time":"2023-01-14T22:06:34.031169+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/key_redaction","Output":"    --- PASS: TestNewWriter/key_redaction (0.00s)\n"}
-{"Time":"2023-01-14T22:06:34.031178+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/key_redaction","Elapsed":0}
-{"Time":"2023-01-14T22:06:34.031182+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter","Elapsed":0}
-{"Time":"2023-01-14T22:06:34.031186+07:00","Action":"run","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestOption_WriterOrStdout"}
-{"Time":"2023-01-14T22:06:34.031189+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestOption_WriterOrStdout","Output":"=== RUN   TestOption_WriterOrStdout\n"}
-{"Time":"2023-01-14T22:06:34.031196+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestOption_WriterOrStdout","Output":"--- PASS: TestOption_WriterOrStdout (0.00s)\n"}
-{"Time":"2023-01-14T22:06:34.031199+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestOption_WriterOrStdout","Elapsed":0}
-{"Time":"2023-01-14T22:06:34.031202+07:00","Action":"run","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew_ShortFile"}
-{"Time":"2023-01-14T22:06:34.031205+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew_ShortFile","Output":"=== RUN   TestNew_ShortFile\n"}
-{"Time":"2023-01-14T22:06:34.031345+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew_ShortFile","Output":"--- PASS: TestNew_ShortFile (0.00s)\n"}
-{"Time":"2023-01-14T22:06:34.031352+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew_ShortFile","Elapsed":0}
-{"Time":"2023-01-14T22:06:34.031355+07:00","Action":"run","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew"}
-{"Time":"2023-01-14T22:06:34.031358+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew","Output":"=== RUN   TestNew\n"}
-{"Time":"2023-01-14T22:06:34.031362+07:00","Action":"run","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/key_redaction"}
-{"Time":"2023-01-14T22:06:34.031365+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/key_redaction","Output":"=== RUN   TestNew/key_redaction\n"}
-{"Time":"2023-01-14T22:06:34.03137+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/key_redaction","Output":"=== PAUSE TestNew/key_redaction\n"}
-{"Time":"2023-01-14T22:06:34.031374+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/key_redaction"}
-{"Time":"2023-01-14T22:06:34.031382+07:00","Action":"run","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/debug"}
-{"Time":"2023-01-14T22:06:34.031385+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/debug","Output":"=== RUN   TestNew/debug\n"}
-{"Time":"2023-01-14T22:06:34.031401+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/debug","Output":"=== PAUSE TestNew/debug\n"}
-{"Time":"2023-01-14T22:06:34.031406+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/debug"}
-{"Time":"2023-01-14T22:06:34.031414+07:00","Action":"run","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/json"}
-{"Time":"2023-01-14T22:06:34.031418+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/json","Output":"=== RUN   TestNew/json\n"}
-{"Time":"2023-01-14T22:06:34.031423+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/json","Output":"=== PAUSE TestNew/json\n"}
-{"Time":"2023-01-14T22:06:34.031427+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/json"}
-{"Time":"2023-01-14T22:06:34.031431+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/key_redaction"}
-{"Time":"2023-01-14T22:06:34.031434+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/key_redaction","Output":"=== CONT  TestNew/key_redaction\n"}
-{"Time":"2023-01-14T22:06:34.031452+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/json"}
-{"Time":"2023-01-14T22:06:34.031456+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/json","Output":"=== CONT  TestNew/json\n"}
-{"Time":"2023-01-14T22:06:34.03146+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/debug"}
-{"Time":"2023-01-14T22:06:34.031463+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/debug","Output":"=== CONT  TestNew/debug\n"}
-{"Time":"2023-01-14T22:06:34.031497+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew","Output":"--- PASS: TestNew (0.00s)\n"}
-{"Time":"2023-01-14T22:06:34.031505+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/key_redaction","Output":"    --- PASS: TestNew/key_redaction (0.00s)\n"}
-{"Time":"2023-01-14T22:06:34.03151+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/key_redaction","Elapsed":0}
-{"Time":"2023-01-14T22:06:34.031514+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/json","Output":"    --- PASS: TestNew/json (0.00s)\n"}
-{"Time":"2023-01-14T22:06:34.031517+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/json","Elapsed":0}
-{"Time":"2023-01-14T22:06:34.031521+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/debug","Output":"    --- PASS: TestNew/debug (0.00s)\n"}
-{"Time":"2023-01-14T22:06:34.031534+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/debug","Elapsed":0}
-{"Time":"2023-01-14T22:06:34.03154+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew","Elapsed":0}
-{"Time":"2023-01-14T22:06:34.031543+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Output":"PASS\n"}
-{"Time":"2023-01-14T22:06:34.031942+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Output":"coverage: 100.0% of statements\n"}
-{"Time":"2023-01-14T22:06:34.032734+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Output":"ok  \tgithub.com/clavinjune/gokit/slogutil\t0.705s\tcoverage: 100.0% of statements\n"}
-{"Time":"2023-01-14T22:06:34.032742+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/slogutil","Elapsed":0.705}
-{"Time":"2023-01-14T22:06:37.779301+07:00","Action":"output","Package":"github.com/clavinjune/gokit/cobrautil","Output":"-test.shuffle 1673708797779112000\n"}
-{"Time":"2023-01-14T22:06:37.779531+07:00","Action":"run","Package":"github.com/clavinjune/gokit/cobrautil","Test":"TestNew"}
-{"Time":"2023-01-14T22:06:37.779595+07:00","Action":"output","Package":"github.com/clavinjune/gokit/cobrautil","Test":"TestNew","Output":"=== RUN   TestNew\n"}
-{"Time":"2023-01-14T22:06:37.780753+07:00","Action":"output","Package":"github.com/clavinjune/gokit/cobrautil","Test":"TestNew","Output":"--- PASS: TestNew (0.00s)\n"}
-{"Time":"2023-01-14T22:06:37.780773+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/cobrautil","Test":"TestNew","Elapsed":0}
-{"Time":"2023-01-14T22:06:37.780786+07:00","Action":"run","Package":"github.com/clavinjune/gokit/cobrautil","Test":"TestMustGetBoolFlag"}
-{"Time":"2023-01-14T22:06:37.780794+07:00","Action":"output","Package":"github.com/clavinjune/gokit/cobrautil","Test":"TestMustGetBoolFlag","Output":"=== RUN   TestMustGetBoolFlag\n"}
-{"Time":"2023-01-14T22:06:37.781038+07:00","Action":"output","Package":"github.com/clavinjune/gokit/cobrautil","Test":"TestMustGetBoolFlag","Output":"--- PASS: TestMustGetBoolFlag (0.00s)\n"}
-{"Time":"2023-01-14T22:06:37.781053+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/cobrautil","Test":"TestMustGetBoolFlag","Elapsed":0}
-{"Time":"2023-01-14T22:06:37.781065+07:00","Action":"output","Package":"github.com/clavinjune/gokit/cobrautil","Output":"PASS\n"}
-{"Time":"2023-01-14T22:06:37.781364+07:00","Action":"output","Package":"github.com/clavinjune/gokit/cobrautil","Output":"coverage: 100.0% of statements\n"}
-{"Time":"2023-01-14T22:06:37.782109+07:00","Action":"output","Package":"github.com/clavinjune/gokit/cobrautil","Output":"ok  \tgithub.com/clavinjune/gokit/cobrautil\t4.342s\tcoverage: 100.0% of statements\n"}
-{"Time":"2023-01-14T22:06:37.782132+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/cobrautil","Elapsed":4.342}
-{"Time":"2023-01-14T22:06:37.784128+07:00","Action":"output","Package":"github.com/clavinjune/gokit/testutil","Output":"?   \tgithub.com/clavinjune/gokit/testutil\t[no test files]\n"}
-{"Time":"2023-01-14T22:06:37.784155+07:00","Action":"skip","Package":"github.com/clavinjune/gokit/testutil","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.448306+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Output":"-test.shuffle 1673776192448095000\n"}
+{"Time":"2023-01-15T16:49:52.448539+07:00","Action":"run","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew"}
+{"Time":"2023-01-15T16:49:52.448546+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew","Output":"=== RUN   TestNew\n"}
+{"Time":"2023-01-15T16:49:52.44856+07:00","Action":"run","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/key_redaction"}
+{"Time":"2023-01-15T16:49:52.448565+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/key_redaction","Output":"=== RUN   TestNew/key_redaction\n"}
+{"Time":"2023-01-15T16:49:52.448575+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/key_redaction","Output":"=== PAUSE TestNew/key_redaction\n"}
+{"Time":"2023-01-15T16:49:52.448578+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/key_redaction"}
+{"Time":"2023-01-15T16:49:52.448582+07:00","Action":"run","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/debug"}
+{"Time":"2023-01-15T16:49:52.448586+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/debug","Output":"=== RUN   TestNew/debug\n"}
+{"Time":"2023-01-15T16:49:52.448606+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/debug","Output":"=== PAUSE TestNew/debug\n"}
+{"Time":"2023-01-15T16:49:52.448609+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/debug"}
+{"Time":"2023-01-15T16:49:52.448612+07:00","Action":"run","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/json"}
+{"Time":"2023-01-15T16:49:52.448615+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/json","Output":"=== RUN   TestNew/json\n"}
+{"Time":"2023-01-15T16:49:52.448618+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/json","Output":"=== PAUSE TestNew/json\n"}
+{"Time":"2023-01-15T16:49:52.448622+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/json"}
+{"Time":"2023-01-15T16:49:52.448625+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/key_redaction"}
+{"Time":"2023-01-15T16:49:52.448628+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/key_redaction","Output":"=== CONT  TestNew/key_redaction\n"}
+{"Time":"2023-01-15T16:49:52.448631+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/json"}
+{"Time":"2023-01-15T16:49:52.448634+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/json","Output":"=== CONT  TestNew/json\n"}
+{"Time":"2023-01-15T16:49:52.448637+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/debug"}
+{"Time":"2023-01-15T16:49:52.44864+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/debug","Output":"=== CONT  TestNew/debug\n"}
+{"Time":"2023-01-15T16:49:52.448659+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew","Output":"--- PASS: TestNew (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.448669+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/key_redaction","Output":"    --- PASS: TestNew/key_redaction (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.448677+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/key_redaction","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.448687+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/debug","Output":"    --- PASS: TestNew/debug (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.448691+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/debug","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.448695+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/json","Output":"    --- PASS: TestNew/json (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.448705+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew/json","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.448708+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.448711+07:00","Action":"run","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestOption_WriterOrStdout"}
+{"Time":"2023-01-15T16:49:52.448714+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestOption_WriterOrStdout","Output":"=== RUN   TestOption_WriterOrStdout\n"}
+{"Time":"2023-01-15T16:49:52.448717+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestOption_WriterOrStdout","Output":"--- PASS: TestOption_WriterOrStdout (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.448719+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestOption_WriterOrStdout","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.448722+07:00","Action":"run","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew_ShortFile"}
+{"Time":"2023-01-15T16:49:52.448725+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew_ShortFile","Output":"=== RUN   TestNew_ShortFile\n"}
+{"Time":"2023-01-15T16:49:52.448728+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew_ShortFile","Output":"--- PASS: TestNew_ShortFile (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.448737+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNew_ShortFile","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.44874+07:00","Action":"run","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter"}
+{"Time":"2023-01-15T16:49:52.448743+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter","Output":"=== RUN   TestNewWriter\n"}
+{"Time":"2023-01-15T16:49:52.448746+07:00","Action":"run","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/key_redaction"}
+{"Time":"2023-01-15T16:49:52.448763+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/key_redaction","Output":"=== RUN   TestNewWriter/key_redaction\n"}
+{"Time":"2023-01-15T16:49:52.448766+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/key_redaction","Output":"=== PAUSE TestNewWriter/key_redaction\n"}
+{"Time":"2023-01-15T16:49:52.448769+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/key_redaction"}
+{"Time":"2023-01-15T16:49:52.448772+07:00","Action":"run","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/debug"}
+{"Time":"2023-01-15T16:49:52.448777+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/debug","Output":"=== RUN   TestNewWriter/debug\n"}
+{"Time":"2023-01-15T16:49:52.44878+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/debug","Output":"=== PAUSE TestNewWriter/debug\n"}
+{"Time":"2023-01-15T16:49:52.448783+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/debug"}
+{"Time":"2023-01-15T16:49:52.448786+07:00","Action":"run","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/json"}
+{"Time":"2023-01-15T16:49:52.448788+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/json","Output":"=== RUN   TestNewWriter/json\n"}
+{"Time":"2023-01-15T16:49:52.448792+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/json","Output":"=== PAUSE TestNewWriter/json\n"}
+{"Time":"2023-01-15T16:49:52.448796+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/json"}
+{"Time":"2023-01-15T16:49:52.4488+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/key_redaction"}
+{"Time":"2023-01-15T16:49:52.448811+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/key_redaction","Output":"=== CONT  TestNewWriter/key_redaction\n"}
+{"Time":"2023-01-15T16:49:52.448814+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/json"}
+{"Time":"2023-01-15T16:49:52.448817+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/json","Output":"=== CONT  TestNewWriter/json\n"}
+{"Time":"2023-01-15T16:49:52.44882+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/debug"}
+{"Time":"2023-01-15T16:49:52.448823+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/debug","Output":"=== CONT  TestNewWriter/debug\n"}
+{"Time":"2023-01-15T16:49:52.44883+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter","Output":"--- PASS: TestNewWriter (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.448834+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/key_redaction","Output":"    --- PASS: TestNewWriter/key_redaction (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.448841+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/key_redaction","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.448845+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/json","Output":"    --- PASS: TestNewWriter/json (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.448858+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/json","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.448869+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/debug","Output":"    --- PASS: TestNewWriter/debug (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.448872+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter/debug","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.448879+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/slogutil","Test":"TestNewWriter","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.448886+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Output":"PASS\n"}
+{"Time":"2023-01-15T16:49:52.448906+07:00","Action":"output","Package":"github.com/clavinjune/gokit/cobrautil","Output":"-test.shuffle 1673776192448769000\n"}
+{"Time":"2023-01-15T16:49:52.448953+07:00","Action":"run","Package":"github.com/clavinjune/gokit/cobrautil","Test":"TestNew"}
+{"Time":"2023-01-15T16:49:52.448985+07:00","Action":"output","Package":"github.com/clavinjune/gokit/cobrautil","Test":"TestNew","Output":"=== RUN   TestNew\n"}
+{"Time":"2023-01-15T16:49:52.449036+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Output":"coverage: 100.0% of statements\n"}
+{"Time":"2023-01-15T16:49:52.449248+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Output":"-test.shuffle 1673776192449205000\n"}
+{"Time":"2023-01-15T16:49:52.449335+07:00","Action":"run","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom"}
+{"Time":"2023-01-15T16:49:52.449341+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom","Output":"=== RUN   TestRandom\n"}
+{"Time":"2023-01-15T16:49:52.449374+07:00","Action":"run","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/less_than_zero"}
+{"Time":"2023-01-15T16:49:52.44938+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/less_than_zero","Output":"=== RUN   TestRandom/less_than_zero\n"}
+{"Time":"2023-01-15T16:49:52.449411+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/less_than_zero","Output":"=== PAUSE TestRandom/less_than_zero\n"}
+{"Time":"2023-01-15T16:49:52.449416+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/less_than_zero"}
+{"Time":"2023-01-15T16:49:52.449434+07:00","Action":"run","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/zero_length"}
+{"Time":"2023-01-15T16:49:52.449438+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/zero_length","Output":"=== RUN   TestRandom/zero_length\n"}
+{"Time":"2023-01-15T16:49:52.449442+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/zero_length","Output":"=== PAUSE TestRandom/zero_length\n"}
+{"Time":"2023-01-15T16:49:52.449445+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/zero_length"}
+{"Time":"2023-01-15T16:49:52.44945+07:00","Action":"run","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/positive_length"}
+{"Time":"2023-01-15T16:49:52.449454+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/positive_length","Output":"=== RUN   TestRandom/positive_length\n"}
+{"Time":"2023-01-15T16:49:52.449458+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/positive_length","Output":"=== PAUSE TestRandom/positive_length\n"}
+{"Time":"2023-01-15T16:49:52.449461+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/positive_length"}
+{"Time":"2023-01-15T16:49:52.449464+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/less_than_zero"}
+{"Time":"2023-01-15T16:49:52.449467+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/less_than_zero","Output":"=== CONT  TestRandom/less_than_zero\n"}
+{"Time":"2023-01-15T16:49:52.449471+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/positive_length"}
+{"Time":"2023-01-15T16:49:52.449475+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/positive_length","Output":"=== CONT  TestRandom/positive_length\n"}
+{"Time":"2023-01-15T16:49:52.44949+07:00","Action":"output","Package":"github.com/clavinjune/gokit/cobrautil","Test":"TestNew","Output":"--- PASS: TestNew (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.449495+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/cobrautil","Test":"TestNew","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.449499+07:00","Action":"run","Package":"github.com/clavinjune/gokit/cobrautil","Test":"TestMustGetBoolFlag"}
+{"Time":"2023-01-15T16:49:52.449503+07:00","Action":"output","Package":"github.com/clavinjune/gokit/cobrautil","Test":"TestMustGetBoolFlag","Output":"=== RUN   TestMustGetBoolFlag\n"}
+{"Time":"2023-01-15T16:49:52.449545+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/zero_length"}
+{"Time":"2023-01-15T16:49:52.449585+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/zero_length","Output":"=== CONT  TestRandom/zero_length\n"}
+{"Time":"2023-01-15T16:49:52.449596+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom","Output":"--- PASS: TestRandom (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.449597+07:00","Action":"output","Package":"github.com/clavinjune/gokit/cobrautil","Test":"TestMustGetBoolFlag","Output":"--- PASS: TestMustGetBoolFlag (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.449629+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/cobrautil","Test":"TestMustGetBoolFlag","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.449639+07:00","Action":"run","Package":"github.com/clavinjune/gokit/cobrautil","Test":"TestMustGetIntFlag"}
+{"Time":"2023-01-15T16:49:52.449649+07:00","Action":"output","Package":"github.com/clavinjune/gokit/cobrautil","Test":"TestMustGetIntFlag","Output":"=== RUN   TestMustGetIntFlag\n"}
+{"Time":"2023-01-15T16:49:52.449658+07:00","Action":"output","Package":"github.com/clavinjune/gokit/cobrautil","Test":"TestMustGetIntFlag","Output":"--- PASS: TestMustGetIntFlag (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.449684+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/cobrautil","Test":"TestMustGetIntFlag","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.449691+07:00","Action":"output","Package":"github.com/clavinjune/gokit/cobrautil","Output":"PASS\n"}
+{"Time":"2023-01-15T16:49:52.44961+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/less_than_zero","Output":"    --- PASS: TestRandom/less_than_zero (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.449709+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/less_than_zero","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.449724+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/positive_length","Output":"    --- PASS: TestRandom/positive_length (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.449749+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/positive_length","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.449761+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/zero_length","Output":"    --- PASS: TestRandom/zero_length (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.449767+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom/zero_length","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.449774+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/stringutil","Test":"TestRandom","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.449791+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Output":"PASS\n"}
+{"Time":"2023-01-15T16:49:52.449802+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Output":"coverage: 100.0% of statements\n"}
+{"Time":"2023-01-15T16:49:52.449762+07:00","Action":"output","Package":"github.com/clavinjune/gokit/slogutil","Output":"ok  \tgithub.com/clavinjune/gokit/slogutil\t3.236s\tcoverage: 100.0% of statements\n"}
+{"Time":"2023-01-15T16:49:52.449822+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/slogutil","Elapsed":3.2359999999999998}
+{"Time":"2023-01-15T16:49:52.449862+07:00","Action":"output","Package":"github.com/clavinjune/gokit/cobrautil","Output":"coverage: 100.0% of statements\n"}
+{"Time":"2023-01-15T16:49:52.450266+07:00","Action":"output","Package":"github.com/clavinjune/gokit/stringutil","Output":"ok  \tgithub.com/clavinjune/gokit/stringutil\t3.270s\tcoverage: 100.0% of statements\n"}
+{"Time":"2023-01-15T16:49:52.450279+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/stringutil","Elapsed":3.271}
+{"Time":"2023-01-15T16:49:52.450395+07:00","Action":"output","Package":"github.com/clavinjune/gokit/cobrautil","Output":"ok  \tgithub.com/clavinjune/gokit/cobrautil\t3.200s\tcoverage: 100.0% of statements\n"}
+{"Time":"2023-01-15T16:49:52.45044+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/cobrautil","Elapsed":3.2}
+{"Time":"2023-01-15T16:49:52.450847+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Output":"-test.shuffle 1673776192450827000\n"}
+{"Time":"2023-01-15T16:49:52.450939+07:00","Action":"run","Package":"github.com/clavinjune/gokit/config","Test":"TestGet"}
+{"Time":"2023-01-15T16:49:52.450949+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet","Output":"=== RUN   TestGet\n"}
+{"Time":"2023-01-15T16:49:52.450979+07:00","Action":"run","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_empty_value"}
+{"Time":"2023-01-15T16:49:52.450998+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_empty_value","Output":"=== RUN   TestGet/default_option_-_empty_value\n"}
+{"Time":"2023-01-15T16:49:52.451014+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_empty_value","Output":"=== PAUSE TestGet/default_option_-_empty_value\n"}
+{"Time":"2023-01-15T16:49:52.451022+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_empty_value"}
+{"Time":"2023-01-15T16:49:52.451132+07:00","Action":"run","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_non_empty_value"}
+{"Time":"2023-01-15T16:49:52.451143+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_non_empty_value","Output":"=== RUN   TestGet/default_option_-_non_empty_value\n"}
+{"Time":"2023-01-15T16:49:52.451156+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_non_empty_value","Output":"=== PAUSE TestGet/default_option_-_non_empty_value\n"}
+{"Time":"2023-01-15T16:49:52.451165+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_non_empty_value"}
+{"Time":"2023-01-15T16:49:52.451177+07:00","Action":"run","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/is_required_-_empty_value"}
+{"Time":"2023-01-15T16:49:52.451195+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/is_required_-_empty_value","Output":"=== RUN   TestGet/is_required_-_empty_value\n"}
+{"Time":"2023-01-15T16:49:52.451214+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/is_required_-_empty_value","Output":"=== PAUSE TestGet/is_required_-_empty_value\n"}
+{"Time":"2023-01-15T16:49:52.451221+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/is_required_-_empty_value"}
+{"Time":"2023-01-15T16:49:52.451228+07:00","Action":"run","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_empty_value"}
+{"Time":"2023-01-15T16:49:52.451238+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_empty_value","Output":"=== RUN   TestGet/default_value_-_empty_value\n"}
+{"Time":"2023-01-15T16:49:52.451244+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_empty_value","Output":"=== PAUSE TestGet/default_value_-_empty_value\n"}
+{"Time":"2023-01-15T16:49:52.451252+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_empty_value"}
+{"Time":"2023-01-15T16:49:52.451258+07:00","Action":"run","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_non_empty_value"}
+{"Time":"2023-01-15T16:49:52.451267+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_non_empty_value","Output":"=== RUN   TestGet/default_value_-_non_empty_value\n"}
+{"Time":"2023-01-15T16:49:52.451273+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_non_empty_value","Output":"=== PAUSE TestGet/default_value_-_non_empty_value\n"}
+{"Time":"2023-01-15T16:49:52.451291+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_non_empty_value"}
+{"Time":"2023-01-15T16:49:52.451298+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_empty_value"}
+{"Time":"2023-01-15T16:49:52.451305+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_empty_value","Output":"=== CONT  TestGet/default_option_-_empty_value\n"}
+{"Time":"2023-01-15T16:49:52.45132+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_empty_value"}
+{"Time":"2023-01-15T16:49:52.451328+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_empty_value","Output":"=== CONT  TestGet/default_value_-_empty_value\n"}
+{"Time":"2023-01-15T16:49:52.451336+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_non_empty_value"}
+{"Time":"2023-01-15T16:49:52.451341+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_non_empty_value","Output":"=== CONT  TestGet/default_value_-_non_empty_value\n"}
+{"Time":"2023-01-15T16:49:52.451372+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/is_required_-_empty_value"}
+{"Time":"2023-01-15T16:49:52.451377+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/is_required_-_empty_value","Output":"=== CONT  TestGet/is_required_-_empty_value\n"}
+{"Time":"2023-01-15T16:49:52.451385+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_non_empty_value"}
+{"Time":"2023-01-15T16:49:52.451394+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_non_empty_value","Output":"=== CONT  TestGet/default_option_-_non_empty_value\n"}
+{"Time":"2023-01-15T16:49:52.451409+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet","Output":"--- PASS: TestGet (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.451425+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_empty_value","Output":"    --- PASS: TestGet/default_option_-_empty_value (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.451435+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_empty_value","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.451444+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_empty_value","Output":"    --- PASS: TestGet/default_value_-_empty_value (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.451456+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_empty_value","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.451466+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_non_empty_value","Output":"    --- PASS: TestGet/default_value_-_non_empty_value (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.45147+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_value_-_non_empty_value","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.451479+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/is_required_-_empty_value","Output":"    --- PASS: TestGet/is_required_-_empty_value (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.451484+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/is_required_-_empty_value","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.45149+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_non_empty_value","Output":"    --- PASS: TestGet/default_option_-_non_empty_value (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.451496+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/config","Test":"TestGet/default_option_-_non_empty_value","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.451502+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/config","Test":"TestGet","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.451515+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Output":"PASS\n"}
+{"Time":"2023-01-15T16:49:52.451524+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Output":"coverage: 100.0% of statements\n"}
+{"Time":"2023-01-15T16:49:52.452154+07:00","Action":"output","Package":"github.com/clavinjune/gokit/config","Output":"ok  \tgithub.com/clavinjune/gokit/config\t3.287s\tcoverage: 100.0% of statements\n"}
+{"Time":"2023-01-15T16:49:52.452166+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/config","Elapsed":3.287}
+{"Time":"2023-01-15T16:49:52.452665+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Output":"-test.shuffle 1673776192452632000\n"}
+{"Time":"2023-01-15T16:49:52.452761+07:00","Action":"run","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault"}
+{"Time":"2023-01-15T16:49:52.452774+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault","Output":"=== RUN   TestFirstOrDefault\n"}
+{"Time":"2023-01-15T16:49:52.452791+07:00","Action":"run","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/nil"}
+{"Time":"2023-01-15T16:49:52.452796+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/nil","Output":"=== RUN   TestFirstOrDefault/nil\n"}
+{"Time":"2023-01-15T16:49:52.452825+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/nil","Output":"=== PAUSE TestFirstOrDefault/nil\n"}
+{"Time":"2023-01-15T16:49:52.452838+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/nil"}
+{"Time":"2023-01-15T16:49:52.452843+07:00","Action":"run","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/zero_length"}
+{"Time":"2023-01-15T16:49:52.452846+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/zero_length","Output":"=== RUN   TestFirstOrDefault/zero_length\n"}
+{"Time":"2023-01-15T16:49:52.452852+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/zero_length","Output":"=== PAUSE TestFirstOrDefault/zero_length\n"}
+{"Time":"2023-01-15T16:49:52.452865+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/zero_length"}
+{"Time":"2023-01-15T16:49:52.45287+07:00","Action":"run","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/1_length"}
+{"Time":"2023-01-15T16:49:52.452873+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/1_length","Output":"=== RUN   TestFirstOrDefault/1_length\n"}
+{"Time":"2023-01-15T16:49:52.452877+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/1_length","Output":"=== PAUSE TestFirstOrDefault/1_length\n"}
+{"Time":"2023-01-15T16:49:52.45288+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/1_length"}
+{"Time":"2023-01-15T16:49:52.452888+07:00","Action":"run","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/2_length"}
+{"Time":"2023-01-15T16:49:52.452891+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/2_length","Output":"=== RUN   TestFirstOrDefault/2_length\n"}
+{"Time":"2023-01-15T16:49:52.452895+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/2_length","Output":"=== PAUSE TestFirstOrDefault/2_length\n"}
+{"Time":"2023-01-15T16:49:52.452898+07:00","Action":"pause","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/2_length"}
+{"Time":"2023-01-15T16:49:52.452901+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/nil"}
+{"Time":"2023-01-15T16:49:52.452905+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/nil","Output":"=== CONT  TestFirstOrDefault/nil\n"}
+{"Time":"2023-01-15T16:49:52.452909+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/1_length"}
+{"Time":"2023-01-15T16:49:52.452912+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/1_length","Output":"=== CONT  TestFirstOrDefault/1_length\n"}
+{"Time":"2023-01-15T16:49:52.452915+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/2_length"}
+{"Time":"2023-01-15T16:49:52.452918+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/2_length","Output":"=== CONT  TestFirstOrDefault/2_length\n"}
+{"Time":"2023-01-15T16:49:52.452922+07:00","Action":"cont","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/zero_length"}
+{"Time":"2023-01-15T16:49:52.452926+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/zero_length","Output":"=== CONT  TestFirstOrDefault/zero_length\n"}
+{"Time":"2023-01-15T16:49:52.452942+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault","Output":"--- PASS: TestFirstOrDefault (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.452947+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/nil","Output":"    --- PASS: TestFirstOrDefault/nil (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.452951+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/nil","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.452954+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/2_length","Output":"    --- PASS: TestFirstOrDefault/2_length (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.452964+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/2_length","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.452969+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/1_length","Output":"    --- PASS: TestFirstOrDefault/1_length (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.45298+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/1_length","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.452993+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/zero_length","Output":"    --- PASS: TestFirstOrDefault/zero_length (0.00s)\n"}
+{"Time":"2023-01-15T16:49:52.453005+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault/zero_length","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.453011+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/argutil","Test":"TestFirstOrDefault","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.453017+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Output":"PASS\n"}
+{"Time":"2023-01-15T16:49:52.453075+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Output":"coverage: 100.0% of statements\n"}
+{"Time":"2023-01-15T16:49:52.453431+07:00","Action":"output","Package":"github.com/clavinjune/gokit/argutil","Output":"ok  \tgithub.com/clavinjune/gokit/argutil\t3.291s\tcoverage: 100.0% of statements\n"}
+{"Time":"2023-01-15T16:49:52.453442+07:00","Action":"pass","Package":"github.com/clavinjune/gokit/argutil","Elapsed":3.291}
+{"Time":"2023-01-15T16:49:52.454272+07:00","Action":"output","Package":"github.com/clavinjune/gokit/grpcutil","Output":"?   \tgithub.com/clavinjune/gokit/grpcutil\t[no test files]\n"}
+{"Time":"2023-01-15T16:49:52.45429+07:00","Action":"skip","Package":"github.com/clavinjune/gokit/grpcutil","Elapsed":0}
+{"Time":"2023-01-15T16:49:52.4543+07:00","Action":"output","Package":"github.com/clavinjune/gokit/testutil","Output":"?   \tgithub.com/clavinjune/gokit/testutil\t[no test files]\n"}
+{"Time":"2023-01-15T16:49:52.454305+07:00","Action":"skip","Package":"github.com/clavinjune/gokit/testutil","Elapsed":0}

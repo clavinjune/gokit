@@ -18,3 +18,14 @@ func TestMustGetBoolFlag(t *testing.T) {
 		cobrautil.MustGetBoolFlag(cmd, "unknown")
 	})
 }
+
+func TestMustGetIntFlag(t *testing.T) {
+	r := require.New(t)
+	cmd := &cobra.Command{}
+	cmd.Flags().Int("foo", 1, "test flag")
+
+	r.Equal(1, cobrautil.MustGetIntFlag(cmd, "foo"))
+	r.Panics(func() {
+		cobrautil.MustGetIntFlag(cmd, "unknown")
+	})
+}
