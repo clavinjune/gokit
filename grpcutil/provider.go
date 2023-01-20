@@ -3,6 +3,7 @@ package grpcutil
 import (
 	"net"
 	"net/http"
+	"strings"
 
 	"github.com/google/wire"
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
@@ -32,7 +33,20 @@ func NewServer(opt *ServerOption) *Server {
 func NewProxy(opt *ProxyOption) *Proxy {
 	core := &http.Server{
 		Handler: http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-			opt.Proxy.ServeHTTP(w, r)
+			switch {
+			case strings.HasPrefix(r.URL.Path, "/api"):
+				fallthrough
+			case r.URL.Path == "/healthz":
+				opt.Proxy.ServeHTTP(w, r)
+			case strings.HasPrefix(r.URL.Path, "/docs"):
+				if opt.OpenApiHandler != nil {
+					opt.OpenApiHandler.ServeHTTP(w, r)
+				} else {
+					http.NotFound(w, r)
+				}
+			default:
+				http.NotFound(w, r)
+			}
 		}),
 	}
 
@@ -69,7 +83,7 @@ func NewServerOption(port ServerPort, server *grpc.Server, logger *slog.Logger) 
 }
 
 func NewProxyOption(server *Server, proxyPort ProxyPort,
-	muxOpts []runtime.ServeMuxOption, logger *slog.Logger,
+	muxOpts []runtime.ServeMuxOption, logger *slog.Logger, openApiHandler http.Handler,
 ) (*ProxyOption, func(), error) {
 
 	l, err := net.Listen("tcp", proxyPort.Address())
@@ -79,10 +93,11 @@ func NewProxyOption(server *Server, proxyPort ProxyPort,
 
 	mux := runtime.NewServeMux(muxOpts...)
 	opt := &ProxyOption{
-		GrpcServer: server,
-		Listener:   l,
-		Proxy:      mux,
-		Logger:     logger,
+		GrpcServer:     server,
+		Listener:       l,
+		Proxy:          mux,
+		Logger:         logger,
+		OpenApiHandler: openApiHandler,
 	}
 
 	cleaner := func() {
