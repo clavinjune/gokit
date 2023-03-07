@@ -11,12 +11,12 @@ lint:
 
 .PHONY: test
 test:
-	@go test -v -covermode=count -shuffle=on ./...
+	@go test -v -covermode=atomic -shuffle=on ./...
 
 .PHONY: test/report
 test/report:
-	@go test -covermode=count -shuffle=on -coverprofile test-coverage.out -json ./... > test-report.json
+	@go test -covermode=atomic -shuffle=on -coverprofile coverage.out -json ./... > test-report.json
 
 .PHONY: test/cover
 test/cover: test/report
-	@go tool cover -html=test-coverage.out
+	@go tool cover -html=coverage.out
