@@ -1,4 +1,4 @@
-package config_test
+package envutil_test
 
 import (
 	"os"
@@ -6,7 +6,7 @@ import (
 
 	"github.com/clavinjune/gokit/stringutil"
 
-	"github.com/clavinjune/gokit/config"
+	"github.com/clavinjune/gokit/envutil"
 	"github.com/stretchr/testify/require"
 )
 
@@ -21,7 +21,7 @@ func TestGet(t *testing.T) {
 		Name          string
 		ExpectedValue string
 		ExpectedError error
-		Opt           *config.Option
+		Opt           *envutil.Option
 		EnvValue      string
 	}{
 		{
@@ -40,8 +40,8 @@ func TestGet(t *testing.T) {
 		{
 			Name:          "is required - empty value",
 			ExpectedValue: "",
-			ExpectedError: config.ErrRequired,
-			Opt: &config.Option{
+			ExpectedError: envutil.ErrRequired,
+			Opt: &envutil.Option{
 				IsRequired: true,
 			},
 			EnvValue: "",
@@ -50,7 +50,7 @@ func TestGet(t *testing.T) {
 			Name:          "default value - empty value",
 			ExpectedValue: "default value",
 			ExpectedError: nil,
-			Opt: &config.Option{
+			Opt: &envutil.Option{
 				DefaultValue: "default value",
 			},
 			EnvValue: "",
@@ -59,7 +59,7 @@ func TestGet(t *testing.T) {
 			Name:          "default value - non empty value",
 			ExpectedValue: "real value",
 			ExpectedError: nil,
-			Opt: &config.Option{
+			Opt: &envutil.Option{
 				DefaultValue: "default value",
 			},
 			EnvValue: "real value",
@@ -78,7 +78,7 @@ func TestGet(t *testing.T) {
 				defer os.Unsetenv(key)
 			}
 
-			actualValue, actualErr := config.Get(key, tc.Opt)
+			actualValue, actualErr := envutil.Get(key, tc.Opt)
 			r.Equal(tc.ExpectedValue, actualValue)
 
 			if tc.ExpectedError != nil {
