@@ -1,4 +1,4 @@
-package config
+package envutil
 
 var (
 	// DefaultOption is used when Option is not defined

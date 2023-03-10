@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-func TestHashVerify(t *testing.T) {
+func TestDecrypt(t *testing.T) {
 	tt := []struct {
 		_      struct{}
 		Name   string
@@ -57,14 +57,23 @@ func TestHashVerify(t *testing.T) {
 		},
 	}
 
+	key, err := cryptoutil.GenerateKey(2048)
+	require.NoError(t, err)
+
 	for i := range tt {
 		tc := tt[i]
 
 		t.Run(tc.Name, func(t *testing.T) {
 			t.Parallel()
 			r := require.New(t)
-			cipher := cryptoutil.HashGenerate(tc.Text, tc.Salt, tc.HashFn)
-			r.True(cryptoutil.HashVerify(tc.Text, cipher, tc.Salt, tc.HashFn))
+
+			cipher, err := cryptoutil.Encrypt(tc.Text, tc.Salt, &key.PublicKey, tc.HashFn)
+			r.NoError(err)
+
+			plain, err := cryptoutil.Decrypt(cipher, tc.Salt, key, tc.HashFn)
+			r.NoError(err)
+
+			r.Equal(tc.Text, plain)
 		})
 	}
 }
