@@ -20,7 +20,9 @@ func TestNew(t *testing.T) {
 	opt.Writer = buf
 
 	root := cobrautil.New("testing", "test", &cobrautil.Option{
-		SlogOption: opt,
+		SlogOption:   opt,
+		SetOutToSlog: true,
+		SetErrToSlog: true,
 	})
 	root.RunE = func(cmd *cobra.Command, args []string) error {
 		cmd.Println("test json")
