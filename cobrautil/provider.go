@@ -13,9 +13,14 @@ func DefaultPersistentPreRunE(opt Option) func(cmd *cobra.Command, _ []string) e
 		slogOpt.IsDebug = MustGetBoolFlag(cmd, "debug")
 		slogOpt.IsJSON = MustGetBoolFlag(cmd, "json")
 		logger := slogutil.New(&slogOpt)
+		slogutil.Put(cmd.Context(), logger)
 
-		cmd.SetOut(slogutil.NewWriter(logger, slog.LevelInfo))
-		cmd.SetErr(slogutil.NewWriter(logger, slog.LevelError))
+		if opt.SetOutToSlog {
+			cmd.SetOut(slogutil.NewWriter(logger, slog.LevelInfo))
+		}
+		if opt.SetErrToSlog {
+			cmd.SetErr(slogutil.NewWriter(logger, slog.LevelError))
+		}
 
 		return nil
 	}
