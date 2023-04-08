@@ -1,4 +1,4 @@
-package grpcutil
+package proxyutil
 
 import "github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
 

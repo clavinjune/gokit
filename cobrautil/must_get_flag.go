@@ -19,3 +19,12 @@ func MustGetIntFlag(cmd *cobra.Command, name string) int {
 
 	return v
 }
+
+func MustGetStringFlag(cmd *cobra.Command, name string) string {
+	v, err := cmd.Flags().GetString(name)
+	if err != nil {
+		panic(err.Error())
+	}
+
+	return v
+}

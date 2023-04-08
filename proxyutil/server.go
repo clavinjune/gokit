@@ -1,4 +1,4 @@
-package grpcutil
+package proxyutil
 
 import (
 	"context"
@@ -7,19 +7,31 @@ import (
 	"os/signal"
 	"syscall"
 
+	"net/http"
+
+	"github.com/clavinjune/gokit/grpcutil"
+	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
 	"golang.org/x/exp/slog"
 	"google.golang.org/grpc"
 )
 
 type Server struct {
 	_        struct{}
-	core     *grpc.Server
+	core     *http.Server
 	listener net.Listener
 	logger   *slog.Logger
+	proxy    *runtime.ServeMux
+
+	grpcAddress  grpcutil.Address
+	grpcDialOpts []grpc.DialOption
 }
 
-func (s *Server) Register(fn func(*grpc.Server)) *Server {
-	fn(s.core)
+func (s *Server) Handle(fn func(proxy *runtime.ServeMux) http.HandlerFunc) *Server {
+	s.core.Handler = fn(s.proxy)
+	return s
+}
+func (s *Server) Register(fn func(proxy *runtime.ServeMux, endpoint string, dialOpts []grpc.DialOption)) *Server {
+	fn(s.proxy, s.grpcAddress.Address(), s.grpcDialOpts)
 	return s
 }
 
@@ -34,9 +46,9 @@ func (s *Server) Start(_ context.Context) error {
 	return nil
 }
 
-func (s *Server) Stop(_ context.Context) {
+func (s *Server) Stop(ctx context.Context) {
 	s.logger.LogAttrs(slog.LevelInfo, "stopped")
-	s.core.GracefulStop()
+	s.core.Shutdown(ctx)
 }
 
 func (s *Server) Listen(ctx context.Context) {
