@@ -2,6 +2,7 @@ package slogutil_test
 
 import (
 	"bytes"
+	"context"
 	"testing"
 
 	"github.com/clavinjune/gokit/slogutil"
@@ -52,8 +53,8 @@ time=[REDACTED] level=DEBUG source=[REDACTED] msg=debug
 			tc.Option.Writer = buf
 
 			logger := slogutil.New(&tc.Option)
-			slogutil.NewWriter(logger, slog.LevelInfo).Write([]byte("info"))
-			slogutil.NewWriter(logger, slog.LevelDebug).Write([]byte("debug"))
+			slogutil.NewWriter(context.Background(), logger, slog.LevelInfo).Write([]byte("info"))
+			slogutil.NewWriter(context.Background(), logger, slog.LevelDebug).Write([]byte("debug"))
 
 			r.Equal(tc.Expected, buf.String())
 		})

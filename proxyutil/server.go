@@ -35,8 +35,8 @@ func (s *Server) Register(fn func(proxy *runtime.ServeMux, endpoint string, dial
 	return s
 }
 
-func (s *Server) Start(_ context.Context) error {
-	s.logger.LogAttrs(slog.LevelInfo, "starting",
+func (s *Server) Start(ctx context.Context) error {
+	s.logger.LogAttrs(ctx, slog.LevelInfo, "starting",
 		slog.String("address", s.listener.Addr().String()),
 	)
 	if err := s.core.Serve(s.listener); err != nil {
@@ -47,14 +47,14 @@ func (s *Server) Start(_ context.Context) error {
 }
 
 func (s *Server) Stop(ctx context.Context) {
-	s.logger.LogAttrs(slog.LevelInfo, "stopped")
+	s.logger.LogAttrs(ctx, slog.LevelInfo, "stopped")
 	s.core.Shutdown(ctx)
 }
 
 func (s *Server) Listen(ctx context.Context) {
 	go func() {
 		if err := s.Start(ctx); err != nil {
-			s.logger.LogAttrs(slog.LevelError, err.Error())
+			s.logger.LogAttrs(ctx, slog.LevelError, err.Error())
 		}
 	}()
 
@@ -62,7 +62,7 @@ func (s *Server) Listen(ctx context.Context) {
 	signal.Notify(stopCh, os.Interrupt, syscall.SIGTERM)
 	stopSignal := <-stopCh
 
-	s.logger.LogAttrs(slog.LevelInfo, "received stop signal",
+	s.logger.LogAttrs(ctx, slog.LevelInfo, "received stop signal",
 		slog.Any("signal", stopSignal),
 	)
 	s.Stop(ctx)
