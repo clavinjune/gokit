@@ -16,10 +16,10 @@ func DefaultPersistentPreRunE(opt Option) func(cmd *cobra.Command, _ []string) e
 		slogutil.Put(cmd.Context(), logger)
 
 		if opt.SetOutToSlog {
-			cmd.SetOut(slogutil.NewWriter(logger, slog.LevelInfo))
+			cmd.SetOut(slogutil.NewWriter(cmd.Context(), logger, slog.LevelInfo))
 		}
 		if opt.SetErrToSlog {
-			cmd.SetErr(slogutil.NewWriter(logger, slog.LevelError))
+			cmd.SetErr(slogutil.NewWriter(cmd.Context(), logger, slog.LevelError))
 		}
 
 		return nil
