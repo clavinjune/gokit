@@ -10,8 +10,8 @@ import (
 func DefaultPersistentPreRunE(opt Option) func(cmd *cobra.Command, _ []string) error {
 	return func(cmd *cobra.Command, _ []string) error {
 		slogOpt := opt.SlogOption
-		slogOpt.IsDebug = MustGetBoolFlag(cmd, "debug")
-		slogOpt.IsJSON = MustGetBoolFlag(cmd, "json")
+		slogOpt.IsDebug = MustGetBoolFlag(cmd, "debug", true)
+		slogOpt.IsJSON = MustGetBoolFlag(cmd, "json", true)
 		logger := slogutil.New(&slogOpt)
 		slogutil.Put(cmd.Context(), logger)
 
