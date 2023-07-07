@@ -39,9 +39,9 @@ func New(opts ...*Option) *slog.Logger {
 
 	var h slog.Handler
 	if opt.IsJSON {
-		h = handlerOpt.NewJSONHandler(opt.WriterOrStdout())
+		h = slog.NewJSONHandler(opt.WriterOrStdout(), handlerOpt)
 	} else {
-		h = handlerOpt.NewTextHandler(opt.WriterOrStdout())
+		h = slog.NewTextHandler(opt.WriterOrStdout(), handlerOpt)
 	}
 
 	logger := slog.New(h)
