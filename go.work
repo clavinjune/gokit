@@ -3,6 +3,7 @@ go 1.20
 use (
 	./argutil
 	./cobrautil
+	./cobrautil/v2
 	./cryptoutil
 	./envutil
 	./etcutil
