@@ -1,9 +1,9 @@
 package grpcutil
 
-import "github.com/clavinjune/gokit/addressutil"
+import "github.com/clavinjune/gokit/etcutil"
 
 var (
-	_ addressutil.Addresser = (*Address)(nil)
+	_ etcutil.Addresser = (*Address)(nil)
 )
 
 type Address string
