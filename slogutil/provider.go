@@ -1,6 +1,7 @@
 package slogutil
 
 import (
+	"fmt"
 	"path/filepath"
 
 	"github.com/clavinjune/gokit/argutil"
@@ -25,8 +26,18 @@ func New(opts ...*Option) *slog.Logger {
 		AddSource: opt.IsDebug,
 		Level:     level,
 		ReplaceAttr: func(groups []string, a slog.Attr) slog.Attr {
-			if a.Key == slog.SourceKey && opt.IsShortFile {
-				a.Value = slog.StringValue(filepath.Base(a.Value.String()))
+			switch a.Key {
+			case slog.SourceKey:
+				src := a.Value.Any().(*slog.Source)
+				if opt.IsShortFile {
+					a.Value = slog.StringValue(
+						fmt.Sprintf("%s:%d", filepath.Base(src.File), src.Line),
+					)
+				} else {
+					a.Value = slog.StringValue(
+						fmt.Sprintf("%s:%d", src.File, src.Line),
+					)
+				}
 			}
 
 			if _, ok := redactedKeySet[a.Key]; ok {
@@ -39,9 +50,9 @@ func New(opts ...*Option) *slog.Logger {
 
 	var h slog.Handler
 	if opt.IsJSON {
-		h = handlerOpt.NewJSONHandler(opt.WriterOrStdout())
+		h = slog.NewJSONHandler(opt.WriterOrStdout(), handlerOpt)
 	} else {
-		h = handlerOpt.NewTextHandler(opt.WriterOrStdout())
+		h = slog.NewTextHandler(opt.WriterOrStdout(), handlerOpt)
 	}
 
 	logger := slog.New(h)
