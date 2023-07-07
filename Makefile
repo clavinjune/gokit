@@ -1,33 +1,18 @@
 include tools.mk
+export
 
 .PHONY: lint
-lint: ./*util
-	@go run $(GOIMPORTS) -w .
-	@gofmt -w -s .
-	for mod in $^ ; do \
-		pushd ./$${mod} && \
-		go mod tidy && \
-		popd ; \
-		go vet ./$${mod}/... ; \
-		go run $(GOVULNCHECK) ./$${mod}/ ; \
-	done
+lint:
+	@./scripts/ops.sh lint
 
 .PHONY: test
-test: ./*util
-	@for mod in $^ ; do \
-		pushd ./$${mod} && \
-		go test -v -covermode=atomic -shuffle=on ./... && \
-		popd ; \
-	done
+test:
+	@./scripts/ops.sh test
 
 .PHONY: test/report
-test/report: ./*util
-	@for mod in $^ ; do \
-		pushd ./$${mod} && \
-        go test -covermode=atomic -shuffle=on -coverprofile coverage.out -json ./... > test-report.json && \
-        popd ; \
-	done
+test/report:
+	@./scripts/ops.sh test_report
 
-#.PHONY: test/cover
-#test/cover: test/report
-#	@go tool cover -html=coverage.out
+.PHONY: test/cover
+test/cover: test/report
+	@./scripts/ops.sh test_cover
