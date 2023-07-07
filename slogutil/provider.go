@@ -1,6 +1,7 @@
 package slogutil
 
 import (
+	"fmt"
 	"path/filepath"
 
 	"github.com/clavinjune/gokit/argutil"
@@ -25,8 +26,18 @@ func New(opts ...*Option) *slog.Logger {
 		AddSource: opt.IsDebug,
 		Level:     level,
 		ReplaceAttr: func(groups []string, a slog.Attr) slog.Attr {
-			if a.Key == slog.SourceKey && opt.IsShortFile {
-				a.Value = slog.StringValue(filepath.Base(a.Value.String()))
+			switch a.Key {
+			case slog.SourceKey:
+				src := a.Value.Any().(*slog.Source)
+				if opt.IsShortFile {
+					a.Value = slog.StringValue(
+						fmt.Sprintf("%s:%d", filepath.Base(src.File), src.Line),
+					)
+				} else {
+					a.Value = slog.StringValue(
+						fmt.Sprintf("%s:%d", src.File, src.Line),
+					)
+				}
 			}
 
 			if _, ok := redactedKeySet[a.Key]; ok {
