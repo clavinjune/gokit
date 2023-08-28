@@ -3,11 +3,11 @@ package slogutil_test
 import (
 	"bytes"
 	"context"
+	"log/slog"
 	"testing"
 
 	"github.com/clavinjune/gokit/slogutil"
 	"github.com/stretchr/testify/require"
-	"golang.org/x/exp/slog"
 )
 
 func TestNewWriter(t *testing.T) {

@@ -2,8 +2,7 @@ package slogutil
 
 import (
 	"context"
-
-	"golang.org/x/exp/slog"
+	"log/slog"
 )
 
 type key struct{}

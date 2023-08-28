@@ -2,9 +2,8 @@ package slogutil
 
 import (
 	"context"
+	"log/slog"
 	"strings"
-
-	"golang.org/x/exp/slog"
 )
 
 type Writer struct {
