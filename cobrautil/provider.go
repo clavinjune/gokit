@@ -1,10 +1,11 @@
 package cobrautil
 
 import (
+	"log/slog"
+
 	"github.com/clavinjune/gokit/argutil"
 	"github.com/clavinjune/gokit/slogutil"
 	"github.com/spf13/cobra"
-	"golang.org/x/exp/slog"
 )
 
 func DefaultPersistentPreRunE(opt Option) func(cmd *cobra.Command, _ []string) error {

@@ -1,6 +1,6 @@
 module github.com/clavinjune/gokit/cobrautil/v2
 
-go 1.20
+go 1.21
 
 require (
 	github.com/clavinjune/gokit/testutil v1.4.0
