@@ -2,10 +2,10 @@ package testutil
 
 import (
 	"bytes"
+	"log/slog"
 	"testing"
 
 	"github.com/clavinjune/gokit/slogutil"
-	"golang.org/x/exp/slog"
 )
 
 func NewSlog(t *testing.T) (*slog.Logger, *bytes.Buffer) {
