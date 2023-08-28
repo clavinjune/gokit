@@ -2,9 +2,9 @@ package slogutil
 
 import (
 	"io"
+	"log/slog"
 	"os"
-
-	"golang.org/x/exp/slog"
+	"time"
 )
 
 const (
@@ -21,6 +21,12 @@ var (
 		IsShortFile:  true,
 		RedactedKeys: []string{},
 		Writer:       os.Stdout,
+	}
+
+	DefaultBufferedWriterOption = BufferedWriterOption{
+		Writer:        os.Stdout,
+		BufferSize:    30 * 1024, // 30KB
+		FlushInterval: 15 * time.Second,
 	}
 )
 
@@ -40,4 +46,35 @@ func (o *Option) WriterOrStdout() io.Writer {
 	}
 
 	return os.Stdout
+}
+
+type BufferedWriterOption struct {
+	_             struct{}
+	Writer        io.Writer
+	BufferSize    int
+	FlushInterval time.Duration
+}
+
+func (b *BufferedWriterOption) MustWriter() io.Writer {
+	if b.Writer != nil {
+		return b.Writer
+	}
+
+	return DefaultBufferedWriterOption.Writer
+}
+
+func (b *BufferedWriterOption) MustBufferSize() int {
+	if b.BufferSize != 0 {
+		return b.BufferSize
+	}
+
+	return DefaultBufferedWriterOption.BufferSize
+}
+
+func (b *BufferedWriterOption) MustFlushInterval() time.Duration {
+	if b.FlushInterval > 0 {
+		return b.FlushInterval
+	}
+
+	return DefaultBufferedWriterOption.FlushInterval
 }

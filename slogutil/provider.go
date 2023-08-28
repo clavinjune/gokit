@@ -2,11 +2,10 @@ package slogutil
 
 import (
 	"fmt"
+	"log/slog"
 	"path/filepath"
 
 	"github.com/clavinjune/gokit/argutil"
-
-	"golang.org/x/exp/slog"
 )
 
 func New(opts ...*Option) *slog.Logger {

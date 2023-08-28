@@ -2,11 +2,11 @@ package slogutil_test
 
 import (
 	"context"
+	"log/slog"
 	"testing"
 
 	"github.com/clavinjune/gokit/slogutil"
 	"github.com/stretchr/testify/require"
-	"golang.org/x/exp/slog"
 )
 
 func TestMain(m *testing.M) {

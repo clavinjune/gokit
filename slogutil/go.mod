@@ -1,11 +1,10 @@
 module github.com/clavinjune/gokit/slogutil
 
-go 1.20
+go 1.21
 
 require (
 	github.com/clavinjune/gokit/argutil v1.4.0
 	github.com/stretchr/testify v1.8.4
-	golang.org/x/exp v0.0.0-20230626212559-97b1e661b5df
 )
 
 require (
