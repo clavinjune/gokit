@@ -1,4 +1,4 @@
-go 1.21
+go 1.21.1
 
 use (
 	./argutil
@@ -7,6 +7,7 @@ use (
 	./cryptoutil
 	./envutil
 	./etcutil
+	./gqlutil
 	./grpcutil
 	./proxyutil
 	./slogutil
